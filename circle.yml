@@ -1,0 +1,19 @@
+machine:
+  php:
+    version: 5.6.5
+general:
+  artifacts:
+    - "build/"
+    - "tmp/"
+dependencies:
+  cache_directories:
+    - "vendor"
+    - "bin"
+test:
+  override:
+    - php -d 'xdebug.max_nesting_level=500' bin/phpunit
+    - ./bin/phpspec run --no-interaction
+    #- ./bin/behat --strict
+    - ant php-cs-fixer-check-task
+    - ant phpcs-task
+    - ant phpmd-task
