@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "devboard/github-core",
-            "version": "0.1.0",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-core.git",
-                "reference": "1171f57d8d418cbccc7113e66d71bf5e076c15a7"
+                "reference": "843f5438bc380c5e98cf03aea50b3f8ea33c2a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-core/zipball/1171f57d8d418cbccc7113e66d71bf5e076c15a7",
-                "reference": "1171f57d8d418cbccc7113e66d71bf5e076c15a7",
+                "url": "https://api.github.com/repos/devboard/github-core/zipball/843f5438bc380c5e98cf03aea50b3f8ea33c2a9f",
+                "reference": "843f5438bc380c5e98cf03aea50b3f8ea33c2a9f",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "proprietary"
             ],
             "description": "Github Core",
-            "time": "2016-02-11 12:47:56"
+            "time": "2016-02-11 16:33:25"
         },
         {
             "name": "guzzle/guzzle",
@@ -1797,16 +1797,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.22",
+            "version": "4.8.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72"
+                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dfb11aa5236376b4fc63853cf746af39fe780e72",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e351261f9cd33daf205a131a1ba61c6d33bd483",
+                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483",
                 "shasum": ""
             },
             "require": {
@@ -1865,7 +1865,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-02-02 09:01:21"
+            "time": "2016-02-11 14:56:33"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
