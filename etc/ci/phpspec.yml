@@ -5,6 +5,10 @@ extensions:
   - RMiller\ExemplifyExtension\ExemplifyExtension
   - RMiller\BehatSpec\PhpSpecExtension
   - PhpSpec\Extension\CodeCoverageExtension
+suites:
+  default:
+    namespace: DevBoardLib\GithubApiFacade
+    psr4_prefix: DevBoardLib\GithubApiFacade
 code_coverage:
   format:
     - html
