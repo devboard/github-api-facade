@@ -1,0 +1,10 @@
+formatter.name: progress
+extensions:
+  - Coduo\PhpSpec\DataProvider\DataProviderExtension
+  - Cjm\PhpSpec\Extension\TypeHintedMethodsExtension
+  - RMiller\ExemplifyExtension\ExemplifyExtension
+  - RMiller\BehatSpec\PhpSpecExtension
+suites:
+  default:
+    namespace: DevBoardLib\GithubApiFacade
+    psr4_prefix: DevBoardLib\GithubApiFacade
