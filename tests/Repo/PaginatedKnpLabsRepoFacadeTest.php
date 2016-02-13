@@ -65,7 +65,7 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return m\MockInterface
+     * @return \DevBoardLib\GithubCore\Repo\GithubRepo
      */
     private function provideTestRepo()
     {
@@ -77,7 +77,7 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return m\MockInterface
+     * @return \DevBoardLib\GithubApiFacade\Auth\GithubAccessToken
      */
     private function provideTestUser()
     {

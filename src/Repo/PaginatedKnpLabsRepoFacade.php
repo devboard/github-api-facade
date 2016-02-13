@@ -30,7 +30,7 @@ class PaginatedKnpLabsRepoFacade implements RepoFacade
     }
 
     /**
-     * @return array|mixed
+     * @return array
      */
     public function fetchAllMilestones()
     {
@@ -66,7 +66,7 @@ class PaginatedKnpLabsRepoFacade implements RepoFacade
     }
 
     /**
-     * @return array|mixed
+     * @return array
      */
     public function fetchAllIssuesAndPullRequests()
     {
@@ -87,6 +87,9 @@ class PaginatedKnpLabsRepoFacade implements RepoFacade
         return $this->client->api('issues');
     }
 
+    /**
+     * @return \Github\Api\Issue\Milestones
+     */
     private function getMilestonesApi()
     {
         return $this->getIssueApi()->milestones();

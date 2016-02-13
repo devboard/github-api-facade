@@ -10,8 +10,6 @@ interface ClientFactory
 {
     /**
      * @param GithubAccessToken $user
-     *
-     * @return mixed
      */
     public function createTokenAuthenticatedClient(GithubAccessToken $user);
 
