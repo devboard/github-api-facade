@@ -27,8 +27,6 @@ class KnpLabsClientFactory implements ClientFactory
      */
     public function createUnauthenticatedClient()
     {
-        $client = new Client();
-
-        return $client;
+        return new Client();
     }
 }
