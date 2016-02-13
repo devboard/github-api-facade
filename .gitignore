@@ -13,3 +13,5 @@
 
 #Ignoring .vagrant folder
 /.vagrant
+/*.sh
+/.ant-targets-build.xml

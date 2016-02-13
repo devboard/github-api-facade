@@ -11,7 +11,8 @@ use Mockery as m;
 class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @group GithubIntegration Live
+     * @group GithubIntegration
+     * @group Live
      */
     public function testFetchAllMilestones()
     {
@@ -20,11 +21,13 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
             $this->provideTestRepo()
         );
 
-        self::assertCount(3, $target->fetchAllMilestones());
+        self::assertCount(4, $target->fetchAllMilestones());
     }
 
     /**
-     * @group GithubIntegration Live
+     * @group GithubIntegration
+     * @group Live
+     * @group wip
      */
     public function testFetchAllIssues()
     {
@@ -33,7 +36,22 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
             $this->provideTestRepo()
         );
 
-        self::assertCount(11, $target->fetchAllIssues());
+        self::assertCount(10, $target->fetchAllIssues());
+    }
+
+    /**
+     * @group GithubIntegration
+     * @group Live
+     * @group wip
+     */
+    public function testFetchAllIssuesAndPullRequests()
+    {
+        $target = new PaginatedKnpLabsRepoFacade(
+            $this->getTokenAuthenticatedApiClient(),
+            $this->provideTestRepo()
+        );
+
+        self::assertCount(12, $target->fetchAllIssuesAndPullRequests());
     }
 
     /**

@@ -9,39 +9,35 @@
     "packages": [
         {
             "name": "devboard/github-core",
-            "version": "0.1.3",
+            "version": "0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-core.git",
-                "reference": "f35bda9c47211b2cabdbe05f0864e14c4338e768"
+                "reference": "6873e805210bf6c4df77f5c54df9244167283b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-core/zipball/f35bda9c47211b2cabdbe05f0864e14c4338e768",
-                "reference": "f35bda9c47211b2cabdbe05f0864e14c4338e768",
+                "url": "https://api.github.com/repos/devboard/github-core/zipball/6873e805210bf6c4df77f5c54df9244167283b71",
+                "reference": "6873e805210bf6c4df77f5c54df9244167283b71",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "behat/behat": "~3.0",
-                "behat/mink": "~1.6",
-                "behat/mink-extension": "~2.0",
                 "ciaranmcnulty/phpspec-typehintedmethods": "~1.1",
                 "codeclimate/php-test-reporter": "@dev",
                 "coduo/phpspec-data-provider-extension": "^1.0",
                 "fabpot/php-cs-fixer": "~1.5",
-                "henrikbjorn/phpspec-code-coverage": "~1.0",
+                "henrikbjorn/phpspec-code-coverage": "~2.0",
                 "mockery/mockery": "~0.9",
                 "phpmd/phpmd": "~2.1",
                 "phpspec/phpspec": "~2.0",
                 "phpunit/phpunit": "~4",
-                "rmiller/behat-spec": "~0.2",
                 "rmiller/exemplify-extension": "~0.2",
                 "satooshi/php-coveralls": "0.6.*",
                 "squizlabs/php_codesniffer": "2.*",
-                "vinkla/climb": "^0.7.0"
+                "vinkla/climb": "^0.8.0"
             },
             "type": "project",
             "autoload": {
@@ -56,7 +52,7 @@
                 "proprietary"
             ],
             "description": "Github Core",
-            "time": "2016-02-11 20:33:51"
+            "time": "2016-02-12 21:20:25"
         },
         {
             "name": "guzzle/guzzle",

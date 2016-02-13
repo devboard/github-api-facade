@@ -44,9 +44,31 @@ class PaginatedKnpLabsRepoFacade implements RepoFacade
     }
 
     /**
-     * @return array|mixed
+     * Returns all issues.
+     *
+     * IMPORTANT:
+     * - GitHub API v3 returns both issues and pullRequests together so filtering needs to be done
+     * - Pull requests have 'pull_request' key.
+     *
+     * @return array
      */
     public function fetchAllIssues()
+    {
+        $results = [];
+
+        foreach ($this->fetchAllIssuesAndPullRequests() as $result) {
+            if (!array_key_exists('pull_request', $result)) {
+                $results[] = $result;
+            }
+        }
+
+        return $results;
+    }
+
+    /**
+     * @return array|mixed
+     */
+    public function fetchAllIssuesAndPullRequests()
     {
         $parameters = [
             $this->githubRepo->getOwner(),
