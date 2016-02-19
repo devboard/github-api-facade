@@ -1,5 +1,8 @@
 language: php
 sudo: false
+env:
+  global:
+    - COMPOSER_DISCARD_CHANGES=true
 matrix:
     include:
         - php: 5.6
