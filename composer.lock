@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae972a1ab1b6bcd180d5a6bb2f9b2536",
-    "content-hash": "4c721ee876bd1abe1d4f05d0e481c9fb",
+    "hash": "0dc57f10d1a0ecd0e32014a12af756b3",
+    "content-hash": "e51bc41b4479d8e0e0e92a85d45f8072",
     "packages": [
         {
             "name": "devboard/github-core",
-            "version": "0.1.12",
+            "version": "dev-core-structures",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-core.git",
-                "reference": "5da4b2202affad4b00923d8ba1e3de6b35f8d35e"
+                "reference": "fd10c62bc59c648e23d71b58d518049bd4c74794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-core/zipball/5da4b2202affad4b00923d8ba1e3de6b35f8d35e",
-                "reference": "5da4b2202affad4b00923d8ba1e3de6b35f8d35e",
+                "url": "https://api.github.com/repos/devboard/github-core/zipball/fd10c62bc59c648e23d71b58d518049bd4c74794",
+                "reference": "fd10c62bc59c648e23d71b58d518049bd4c74794",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "proprietary"
             ],
             "description": "Github Core",
-            "time": "2016-02-21 11:15:59"
+            "time": "2016-02-21 23:40:02"
         },
         {
             "name": "guzzle/guzzle",
@@ -3493,7 +3493,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "devboard/github-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
