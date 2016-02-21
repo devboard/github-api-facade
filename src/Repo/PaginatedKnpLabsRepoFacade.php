@@ -90,6 +90,21 @@ class PaginatedKnpLabsRepoFacade implements RepoFacade
     /**
      * @return array
      */
+    public function fetchAllTags()
+    {
+        $results = [];
+
+        foreach ($this->fetchAllTagNames() as $tagData) {
+            $tagData['commit'] = $this->fetchCommit($tagData['commit']['sha']);
+            $results[]         = $tagData;
+        }
+
+        return $results;
+    }
+
+    /**
+     * @return array
+     */
     public function fetchAllTagNames()
     {
         $parameters = [

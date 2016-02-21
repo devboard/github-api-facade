@@ -8,6 +8,11 @@ interface RepoFacade
 {
     public function fetchDetails();
 
+    /**
+     * @param $branchName
+     *
+     * @return mixed
+     */
     public function fetchBranch($branchName);
 
     public function fetchAllBranches();
@@ -16,10 +21,25 @@ interface RepoFacade
 
     public function fetchAllTagNames();
 
+    /**
+     * @param $commitSha
+     *
+     * @return mixed
+     */
     public function fetchCommit($commitSha);
 
+    /**
+     * @param $commitSha
+     *
+     * @return mixed
+     */
     public function fetchCommitStatus($commitSha);
 
+    /**
+     * @param $commitSha
+     *
+     * @return mixed
+     */
     public function fetchCommitStatuses($commitSha);
 
     public function fetchAllPullRequests();

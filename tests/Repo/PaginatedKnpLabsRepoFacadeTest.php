@@ -66,6 +66,15 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
      * @group GithubIntegration
      * @group Live
      */
+    public function testFetchAllTags()
+    {
+        self::assertCount(1, $this->facade->fetchAllTags());
+    }
+
+    /**
+     * @group GithubIntegration
+     * @group Live
+     */
     public function testFetchAllTagNames()
     {
         self::assertCount(1, $this->facade->fetchAllTagNames());
@@ -85,7 +94,6 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
     /**
      * @group GithubIntegration
      * @group Live
-     * @group wip
      */
     public function testFetchCommitStatuses()
     {
@@ -95,7 +103,6 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
     /**
      * @group GithubIntegration
      * @group Live
-     * @group wip
      */
     public function testFetchCommitStatus()
     {
@@ -109,7 +116,6 @@ class PaginatedKnpLabsRepoFacadeTest extends \PHPUnit_Framework_TestCase
     /**
      * @group GithubIntegration
      * @group Live
-     * @group wip
      */
     public function testFetchAllPullRequests()
     {
