@@ -19,6 +19,8 @@ interface RepoFacade
 
     public function fetchAllBranchNames();
 
+    public function fetchAllTags();
+
     public function fetchAllTagNames();
 
     /**
