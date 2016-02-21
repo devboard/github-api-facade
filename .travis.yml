@@ -26,13 +26,15 @@ script:
   - if [[ $coverage == 'phpunit' ]]; then sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
   - php -d 'xdebug.max_nesting_level=500' bin/phpunit
   - if [[ $coverage == 'phpunit' ]]; then sed -i 's/^/;/' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
-  - if [[ $coverage == 'phpunit' ]]; then php bin/coveralls -v; fi;
-  - if [[ $coverage == 'phpunit' ]]; then php bin/test-reporter -v; fi;
   - if [[ $coverage == 'phpspec' ]]; then sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
   - ./bin/phpspec run --no-interaction
   - if [[ $coverage == 'phpspec' ]]; then sed -i 's/^/;/' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
-  - if [[ $coverage == 'phpspec' ]]; then php bin/coveralls -v; fi;
-  - if [[ $coverage == 'phpspec' ]]; then php bin/test-reporter -v; fi;
   - ant php-cs-fixer-check-task
   - ant phpcs-task
   - ant phpmd-task
+
+after_script:
+  - if [[ $coverage == 'phpunit' ]]; then php bin/coveralls -v; fi;
+  - if [[ $coverage == 'phpunit' ]]; then php bin/test-reporter -v; fi;
+  - if [[ $coverage == 'phpspec' ]]; then php bin/coveralls -v; fi;
+  - if [[ $coverage == 'phpspec' ]]; then php bin/test-reporter -v; fi;
