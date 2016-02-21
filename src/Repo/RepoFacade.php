@@ -17,31 +17,12 @@ interface RepoFacade
 
     public function fetchAllBranches();
 
-    public function fetchAllBranchNames();
-
     public function fetchAllTags();
 
-    public function fetchAllTagNames();
-
-    /**
-     * @param $commitSha
-     *
-     * @return mixed
-     */
     public function fetchCommit($commitSha);
 
-    /**
-     * @param $commitSha
-     *
-     * @return mixed
-     */
     public function fetchCommitStatus($commitSha);
 
-    /**
-     * @param $commitSha
-     *
-     * @return mixed
-     */
     public function fetchCommitStatuses($commitSha);
 
     public function fetchAllPullRequests();
