@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-core.git",
-                "reference": "ec1b16660cd619b28a8cf30300f47a19114d15f5"
+                "reference": "159ccba20f928946f026793bb378502c35fa1f0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-core/zipball/ec1b16660cd619b28a8cf30300f47a19114d15f5",
-                "reference": "ec1b16660cd619b28a8cf30300f47a19114d15f5",
+                "url": "https://api.github.com/repos/devboard/github-core/zipball/159ccba20f928946f026793bb378502c35fa1f0c",
+                "reference": "159ccba20f928946f026793bb378502c35fa1f0c",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "proprietary"
             ],
             "description": "Github Core",
-            "time": "2016-02-21 23:07:35"
+            "time": "2016-02-21 23:11:33"
         },
         {
             "name": "guzzle/guzzle",
