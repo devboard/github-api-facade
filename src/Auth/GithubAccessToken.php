@@ -1,4 +1,5 @@
 <?php
+
 namespace DevBoardLib\GithubApiFacade\Auth;
 
 /**
