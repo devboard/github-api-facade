@@ -1,4 +1,5 @@
 <?php
+
 namespace tests\DevBoardLib\GithubApiFacade\Client;
 
 use DevBoardLib\GithubApiFacade\Client\KnpLabsClientFactory;

@@ -1,4 +1,5 @@
 <?php
+
 namespace DevBoardLib\GithubApiFacade\Client;
 
 use DevBoardLib\GithubApiFacade\Auth\GithubAccessToken;
