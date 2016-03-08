@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "932593244cd31fc08fb4adafd0c397a3",
-    "content-hash": "2b1f1490fa7f3f09552b3a844c6e5387",
+    "hash": "feeb93517b08432c82eb7e4bc9bd5fc6",
+    "content-hash": "b08a0072389d38f00d26272f64432f28",
     "packages": [
         {
             "name": "devboard/github-core",
-            "version": "v0.2.2",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-core.git",
-                "reference": "1948327bc2b9b5579b67818194195d33708c5f0b"
+                "reference": "f497152953a24c01ed8b047bf945089b2b007af4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-core/zipball/1948327bc2b9b5579b67818194195d33708c5f0b",
-                "reference": "1948327bc2b9b5579b67818194195d33708c5f0b",
+                "url": "https://api.github.com/repos/devboard/github-core/zipball/f497152953a24c01ed8b047bf945089b2b007af4",
+                "reference": "f497152953a24c01ed8b047bf945089b2b007af4",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "proprietary"
             ],
             "description": "Github Core",
-            "time": "2016-03-02 10:38:17"
+            "time": "2016-03-08 17:05:19"
         },
         {
             "name": "guzzle/guzzle",
