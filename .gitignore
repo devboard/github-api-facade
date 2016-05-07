@@ -10,6 +10,7 @@
 *.orig
 #Ignoring MacDS_Store files
 .DS_Store
+/.php_cs.cache
 
 #Ignoring .vagrant folder
 /.vagrant

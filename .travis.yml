@@ -29,7 +29,7 @@ script:
   - if [[ $coverage == 'phpspec' ]]; then sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
   - ./bin/phpspec run --no-interaction
   - if [[ $coverage == 'phpspec' ]]; then sed -i 's/^/;/' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini; fi;
-  - ant php-cs-fixer-check-task
+  - ant php-cs-fixer-check
   - ant phpcs-task
   - ant phpmd-task
 

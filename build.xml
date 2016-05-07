@@ -10,10 +10,10 @@
     </target>
 
     <target name="fix-codestandards"
-            depends="php-cs-fixer-fix-task,check-codestandards">
+            depends="php-cs-fixer-fix,check-codestandards">
     </target>
     <target name="check-codestandards"
-            depends="php-cs-fixer-check-task,phpmd-task,phpcs-task">
+            depends="php-cs-fixer-check,phpmd-task,phpcs-task">
     </target>
 
     <target name="phpspec" description="">
@@ -50,32 +50,6 @@
             </condition>
         </fail>
     </target>
-    <target name="php-cs-fixer-fix-task" description="Run php-cs-fixer fix in parallel">
-         <parallel failonany="true" threadCount="2">
-            <antcall target="php-cs-fixer-fix">
-            	<param name="path" value="src"/>
-            </antcall>
-            <antcall target="php-cs-fixer-fix">
-            	<param name="path" value="spec"/>
-            </antcall>
-            <antcall target="php-cs-fixer-fix">
-                <param name="path" value="tests"/>
-            </antcall>
-        </parallel>
-    </target>
-    <target name="php-cs-fixer-check-task" description="Run php-cs-fixer dry-run in parallel">
-         <parallel failonany="true" threadCount="2">
-            <antcall target="php-cs-fixer-check">
-            	<param name="path" value="src"/>
-            </antcall>
-            <antcall target="php-cs-fixer-check">
-            	<param name="path" value="spec"/>
-            </antcall>
-            <antcall target="php-cs-fixer-check">
-                <param name="path" value="tests"/>
-            </antcall>
-        </parallel>
-    </target>
     <target name="phpmd-task" description="Run phpmd in parallel">
          <parallel failonany="true" threadCount="2">
             <antcall target="phpmd">
@@ -100,19 +74,13 @@
     <target name="php-cs-fixer-fix" description="">
         <exec executable="bin/php-cs-fixer" failonerror="false">
             <arg value="fix" />
-            <arg path="${basedir}/${path}" />
-            <arg value="--level=symfony" />
-            <arg value="--fixers=short_array_syntax,align_double_arrow,align_equals,no_blank_lines_before_namespace,ordered_use,phpdoc_order,-unused_use,-empty_return" />
         </exec>
     </target>
     <target name="php-cs-fixer-check" description="" >
         <exec executable="bin/php-cs-fixer" failonerror="true">
             <arg value="fix" />
-            <arg path="${basedir}/${path}" />
             <arg value="--dry-run" />
             <arg value="--diff" />
-            <arg value="--level=symfony" />
-            <arg value="--fixers=short_array_syntax,align_double_arrow,align_equals,no_blank_lines_before_namespace,ordered_use,phpdoc_order,-unused_use,-empty_return" />
         </exec>
     </target>
     <target name="phpmd" description="">
