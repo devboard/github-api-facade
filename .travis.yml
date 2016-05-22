@@ -17,6 +17,9 @@ cache:
     - vendor
     - bin
 
+notifications:
+  email: false
+
 before_script:
   - if [[ $coverage == 'phpspec' ]]; then cp etc/ci/phpspec.yml phpspec.yml; fi;
   - sed -i 's/^/;/' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
