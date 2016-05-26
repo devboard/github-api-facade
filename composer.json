@@ -3,6 +3,8 @@
     "description": "Github API facade",
     "license": "proprietary",
     "type": "project",
+    "minimum-stability":"dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "DevBoardLib\\GithubApiFacade\\": "src/",
