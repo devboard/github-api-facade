@@ -1,5 +1,6 @@
 <?php
 
+declare (strict_types = 1);
 namespace DevBoardLib\GithubApiFacade\User;
 
 use DevBoardLib\GithubApiFacade\Auth\GithubAccessToken;

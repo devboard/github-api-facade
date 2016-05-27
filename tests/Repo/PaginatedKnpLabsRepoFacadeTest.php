@@ -1,5 +1,6 @@
 <?php
 
+declare (strict_types = 1);
 namespace tests\DevBoardLib\GithubApiFacade\Repo;
 
 use DevBoardLib\GithubApiFacade\Client\KnpLabsClientFactory;
